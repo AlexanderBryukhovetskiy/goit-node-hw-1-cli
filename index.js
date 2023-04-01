@@ -1,12 +1,9 @@
 const actions  = require("./contacts");
-// CHECK FUNCTIONS:
-// actions.listContacts().then(console.log).catch(console.error); //ok
-// actions.getContactById("C9sjBfCo4UJCWjzBnOtxl").catch(console.error); // ok
-// actions.addContact("Tor", "tor@mail.com", "+147896325410").catch(console.error); // ok
-// actions.removeContact("YY4pr04Kyl").catch(console.error); // ok
 
 const { Command } = require("commander");
+
 const program = new Command();
+
 program
   .option("-a, --action <type>", "choose action")
   .option("-i, --id <type>", "user id")
